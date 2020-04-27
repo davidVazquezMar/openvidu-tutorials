@@ -53,7 +53,8 @@ window.onbeforeunload = function () {
  *   3) The token must be consumed in Session.connect() method
  */
 
-var OPENVIDU_SERVER_URL = "https://" + location.hostname + ":4443";
+//var OPENVIDU_SERVER_URL = "https://" + location.hostname + ":4443";
+var OPENVIDU_SERVER_URL = "https://" + "172.16.12.136" + ":4443";
 var OPENVIDU_SERVER_SECRET = "MY_SECRET";
 
 function getToken(mySessionId) {

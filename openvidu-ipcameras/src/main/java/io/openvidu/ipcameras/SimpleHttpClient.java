@@ -77,6 +77,7 @@ public class SimpleHttpClient {
 		json.addProperty("data", cameraName);
 		json.addProperty("adaptativeBitrate", adaptativeBitrate);
 		json.addProperty("onlyPlayWithSubscribers", onlyPlayWhenSubscribers);
+		// FIXME: Enviar un token mock para evitar el nullPointer al hacer fetch de sesions openVidu
 		StringEntity params = new StringEntity(json.toString());
 
 		request.setHeader(HttpHeaders.CONTENT_TYPE, "application/json");
